@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>title</title>
+     <style>
+          mark{
+               color:aqua;
+               
+          }
+     </style>
+</head>
+<body>
+     <div>
+     <p>You mean it works now? if so I'm so <em>happy</em></p>
+
+     <p>This pre text <mark>is marked</mark>, use the tag mark</p>
+          <p>This section is a code stretch 
+          <pre><code>
+var grau = function(temp,medida){
+let newTemperature = temp*23*8/20;
+return newTemperature+medida     
+}
+          </code></pre> 
+     </p>
+     <P>As I always say
+
+          <q>Nothing is Universal</q>
+     </P>
+
+     <p>
+          According to Jeff Noble :
+          <blockquote cite="https://www.google.com.br/books/edition/O_poder_dos_quietos/FM6wDwAAQBAJ?hl=pt-BR&gbpv=0">
+               Cain, Susan. O poder dos quietos. <abbr style="text-decoration: none;" title="?????">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis nihil laborum, maxime quis, minus a facere voluptates, provident fugit cupiditate tempore sapiente velit soluta dolores? Exercitationem molestias nobis laudantium beatae!</abbr>  Brasil, GMT, 2019.
+          </blockquote>
+     </div>
+     <div>
+     </p>
+      <h2>This is a list type</h2>
+      <ol type="a" start="25" ><!--Pode usar 'a' 'A' '1' 'I' 'i' '1'-->
+          <li>Lunch </li>
+          <li>eat</li>
+          <li>make</li>
+          <li>sleep</li>
+          <li>Go</li>
+      </ol>
+      <h2>This is another type of list</h2>
+      <ul type='circle'><!--square, circle, disc-->
+           <li>letter 3</li>
+           <li>leter 3</li>
+           <li>ok</li>
+      </ul>
+      <h2>Definition list</h2>
+      
+      <dl>
+           <dt>Termo</dt>
+           <dd>Descrition</dd>
+      </dl>
+
+
+      <h3>Now put them together</h3>
+      <ol type='I'>
+           <li>FAV numbers</li>
+           <ul>
+                <li>1</li>
+                <li>5</li>
+                <li>7</li>
+                <li>15</li>
+                <li>25</li>
+           </ul>
+           <li>FAV letters</li>
+           <ul>
+               <li>c</li>
+               <li>v</li>
+               <li>g</li>
+               <li>y</li>
+          </ul>
+      </ol>
+      <ol><!-- ol>li*7-->
+           <li></li>
+           <li></li>
+           <li></li>
+           <li></li>
+           <li></li>
+           <li></li>
+           <li></li>
+      </ol>
+     </div>
+     <div>
+          <h1>Anchor</h1>
+          <p>Para pegar docs que são parentes do do arquivo use <code>../</code></p>
+          
+     </div>
+     <script>
+          const div = document.getElementsByTagName('tag');
+          var c = true;
+          div.addEventListener('click',()=>{
+               if(c){
+                    div.style.display='none';
+                    console.log(c)
+                    c=!c;
+
+               }
+               div.style.display='block';
+          })
+     </script>
+</body>
+</html>

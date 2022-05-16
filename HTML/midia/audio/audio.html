@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     <h1>Reproduzindo áudio</h1>
+     <ol>
+          <li><h5>Jeito 1</h5></li>
+          <ol>
+               <li> <h3>Audio <em>happy mistake</em></h3>
+               <audio src="audios/happy-mistake.mp3" autoplay controls loop> </audio></li><!--Meio limitada essa maneira-->
+          </ol>
+          <li><h5>Jeito 2</h5></li>
+          <ol>
+               <h3>Audio <em></em></h3>
+               <audio preload="metadata" controls >
+                    <source src="audios/guanacast-33.mp3" type="audio/mpeg">
+                    <source src="audios/guanacast-33.ogg" type="audio/ogg">
+                    <source src="audios/guanacast-33.wav" type="wav"><!--evitar usar-->
+                    <p>Seu navegador não é compatível com áudio. <a href="audios/guanacast-33.mp3">Clique aqui para baixar</a>  </p>
+               </audio>
+          </ol>
+     </ol>
+    
+</body>
+</html>

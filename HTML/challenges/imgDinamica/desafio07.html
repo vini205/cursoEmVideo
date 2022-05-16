@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>DEsafio007</title>
+</head>
+<body onload="resize()" onresize="resize()">
+     <a href="../../Imagens/images.html" target="_blank">imgss</a>
+     <p id='p'>Imagem grande</p>
+     <picture>
+          <source media='(min-width:1250px)'srcset="https://github.com/gustavoguanabara/html-css/blob/master/desafios/modulo-01/d007/imagens/paisagem-g.png?raw=true" type='image/png'>
+
+          <source media="(min-width: 762px)" srcset="https://github.com/gustavoguanabara/html-css/blob/master/desafios/modulo-01/d007/imagens/paisagem-m.png?raw=true" type="image/png">
+          <img src="https://raw.githubusercontent.com/gustavoguanabara/html-css/master/desafios/modulo-01/d007/imagens/paisagem-p.png" alt="">
+          
+          
+     </picture>
+     <script>
+          function resize() {
+               var p=document.getElementById('p');
+          if(window.innerWidth<1250&&window.innerWidth>762){
+               p.innerText='imagem media';
+          } else if(window.innerWidth<762){
+               p.innerText='imagem pequena'; 
+          } else{
+               p.innerText='imagem grande';
+          }
+          }
+          
+     </script>
+</body>
+</html>
