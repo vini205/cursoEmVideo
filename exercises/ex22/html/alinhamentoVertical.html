@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    section{
+      height: 100vh;
+      margin: none;
+      padding: none;
+      background-image: url('../imgs/target001.png');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-color: rgb(235, 103, 103);
+      /*position: relative;*/
+      /*
+      Se coloca o relative para que o article se oriente a 
+      partir dele e não do window/ou body/ou html. Aparentemente funciona sem colocar o relative, o padrão é relative
+                          */
+    }
+    html,body{/*para o 100vh funcionar*/
+      margin: 0;
+      padding: 0;
+    }
+    article{
+      width:300px;
+      height: 200px;
+      background-color: rgba(193, 253, 72, 0.151);
+      margin: auto;
+      position: absolute;/*em relação ao parent *eu acho */
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);/*para não ficar com a ponta no meio*/
+    }
+    .point{
+      background-color: black;
+      height: 2px;
+      width: 2px;
+      z-index: 3;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+    }
+  </style>
+</head>
+<body>
+  <div class="point"></div><!--Se colocar ele fora do section ele ficará no meio em relação ao parent (body, html ou window)
+                            se ele esta dentro, esta no meio em relação ao section -->
+  <section>
+    <article>
+
+    </article>
+  </section>
+  <script>
+    
+  </script>
+</body>
+</html>
