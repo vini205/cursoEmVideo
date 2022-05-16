@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Boxing</title>
+     <style>
+          
+          @media  (max-width:1315px) {
+               .header{
+                    width:80vw;
+               }
+               .sectionOne{
+                    max-width: 70vw;
+               }
+          }
+          @media (max-width:390px){
+               nav{
+                    display: flex;
+                    flex-direction: column;
+                    
+               }
+               a{
+                    width: fit-content;
+                    margin: auto;
+               }
+          }
+          @font-face {
+               font-family: 'Alice';
+               src: url('../fontes/fontes/Alice/Alice-Regular.ttf') format('truetype');
+
+          }
+          html{
+               font-size: 62.5%;
+          }     
+          p{
+               font-size: 2.0em;
+               font-family: 'Alice',monospace;
+               text-align: justify;
+               padding: 1em;
+          }
+          header{
+               background-color: #4FA0DB97;
+               margin-bottom: 10px;
+               padding: 5%;
+               width: 88vw;
+               margin: auto;
+               border-radius: 13px;
+          }
+          h1{
+               font-size: 3em;
+               padding-top: 0px;
+          }
+          nav >a{
+               background-color: #25638F;
+               text-decoration: none;
+               color:white;
+               border: 4px double #25638F;
+               border-radius: 0 6px 12px 6px;
+               padding: 7px;
+               margin: 0px;
+          }
+          nav > p{
+               margin-bottom: 0px;    
+          }
+          a:hover{
+               background-color: #DB8465;
+               flex-wrap: wrap;
+          }
+          h1,h2,nav{
+               text-align: center;
+          }
+          nav{
+               justify-content: space-around;
+               box-shadow: 3px 3px 5px 1px black;
+               border-radius: 50%;
+               height: 100px;
+          }
+          main{
+               display: flex;
+               flex-direction: row;
+               width: 94vw;
+               justify-content: space-between;
+          }
+          #imgBox{
+               height: 250px;
+               
+               text-align: center;
+               align-items: center;
+               width: 300px;
+          }
+          .lateral{
+               margin-top: 10px;
+               display:flex;
+               margin-right: 0%;
+               flex-direction: column;
+               justify-content: space-between;
+               border: cadetblue 2px solid;
+               background-color: #9E9CDB;
+          }
+          aside{
+               padding: 10px;
+          }
+          .sectionOne{
+               width: 80vw;
+          }
+          .articalImg{
+               display: flex;
+               flex-direction: column;
+          }
+          .asideImg{
+               width: fit-content;
+          }
+          footer > p{
+               letter-spacing: 1px;
+               line-break: loose;
+               line-height: 20px;
+          }
+          footer{
+               background-color: rgba(0, 0, 0, 0.551);
+          }
+     </style>
+</head>
+<body>
+     <header class="header">
+          <h1>Título</h1>
+          <h2>Sub-título</h2>
+          <nav> <p style="text-align: center;">Link para outros sites:</p>
+               <a href="#">Link 1</a>
+               <a href="#">Link 2</a>
+               <a href="#">Link 3</a>
+               <a href="#">Link 4</a> <br>
+          </nav>
+     </header>
+     <main>
+          <section class="sectionOne">
+               <article>
+                    <div>
+                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit eveniet deserunt recusandae dolore earum nulla, atque ipsam pariatur labore nam non exercitationem rem, praesentium rerum aliquid voluptatum cum excepturi, deleniti ratione accusantium quis sunt! Amet, tempore odit earum, facere voluptatibus molestiae officiis dolor aliquid mollitia maxime rem placeat, beatae iusto ullam cumque. Hic molestiae, explicabo, beatae doloribus quo, maxime voluptates qui quae repudiandae quas architecto dolorem sunt?</p>
+                    </div>
+               </article>
+               <article class="articalImg art">
+                    <div id='imgBox'>
+                         <span class="img">Imagem</span>
+                    </div>
+                    <div>
+                         <aside class="asideImg">
+                              <div>
+                                   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum doloribus, dolore iste ex iusto autem delectus? Minima rerum corrupti ipsum praesentium, magni assumenda fuga ratione possimus reprehenderit itaque, vel quos.</p>
+                              </div>
+                         </aside>
+                    </div>
+               </article>
+          </section>
+          <aside class="lateral">
+               <div>Side information, Adds...</div>
+               <div>Side information, Adds...</div>
+               <div>Side information, Adds...</div>
+               <div>Side information, Adds...</div>
+
+          </aside>
+     </main>
+     <section>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores iste ab suscipit accusantium eum necessitatibus adipisci reprehenderit veritatis harum placeat, nulla eaque est! Vero consectetur similique eveniet, asperiores voluptatibus ut nulla et?</p>
+     </section>
+     <hr>
+     <footer>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium quia maxime pariatur nisi excepturi corrupti deleniti aspernatur. Error corporis quisquam ipsum earum eaque incidunt libero, dolor nostrum vel officia aut.</p>
+     </footer>
+</body>
+</html>

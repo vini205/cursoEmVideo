@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Pseudo-Classes</title>
+     <style>
+          h1{
+               font: bold ;
+          }
+          a{
+               padding: 2px;
+               border-radius: 2px;
+               line-height: 0.2cm;
+               color: rgb(0, 119, 255);
+          }
+          a:focus{
+               border:2px dashed black;
+          }
+          a:active{
+               color: rgb(221, 255, 0);
+          }
+          a:visited{
+               color: crimson;
+               background-color: rgba(95, 174, 174, 0.599);
+          }
+          a:hover{
+               background-color: cyan;
+          }
+         
+     </style>
+</head>
+<body>
+     <h1>Personalizando links</h1>
+     <ul>
+          <li><a href="../colors/colorsBasc.html" rel="next" >Cores 1</a></li>
+          <li><a href="../colors/gradiente.html" rel="next">Cores gradiente</a></li>
+          <li><a href="../fontes/fonte.html" rel="next">Fontes</a></li>
+          <li><a href="../colors/pretty.html" rel="next">Títulos</a></li>
+          <li><a href="pseudo-elementos.html">Elementos</a></li>
+     </ul>
+</body>
+</html>

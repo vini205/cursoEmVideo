@@ -1,0 +1,212 @@
+@font-face {
+     font-family: 'droid';
+     src: url('../fontes/idroid.otf') format('opentype');
+     font-weight: normal;
+     font-style: normal;
+}
+@font-face {
+     font-family: 'Bebas Neue';
+     src: url('../fontes/Bebas_Neue/BebasNeue-Regular.ttf') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+}
+@media (max-width:880px) {
+     .main{
+          width: 93vw;
+     }
+     .header{
+          background-color: hotpink;
+     }
+     .video iframe{
+          width: 100%;
+          
+      }
+     
+}
+:root{
+     --corClara: #c5ebd6;
+     --cor2:#83e1ad;
+     --cor3:#3ddc84;
+     --cor4:#2fa866;
+     --main: green;
+     --cor5:#1a5c37;
+     --cor6:#063d1e;
+     --fontdroid:'droid';
+     --fontMain:Verdana, Geneva, Tahoma, sans-serif;
+     --font-title:'Bebas Neue',cursive;
+     --font-title-color:white;
+}
+*{
+     margin: 0;
+     padding: 0;
+}
+body{
+     background-color: var(--corClara);
+     font-size: 62.5%;
+     padding: 0;
+}
+header{
+     padding-top: 30px;
+     padding-bottom: 0px;
+     margin: 0;
+     color: var(--cor6);
+     background-image: linear-gradient(180deg,var(--cor3),var(--cor6) );
+     /*background-image: linear-gradient(180deg,#39C276,#1a4a30);*/
+}
+.title{
+     text-align: center;
+     font-family: var(--font-title);
+     color: var(--font-title-color);
+     margin: 0px  5px;
+     text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.619);
+}
+.h1-title{
+     font-size: 4.9em;
+     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.619);
+     font-weight: normal;
+}
+.h2-title{
+     font-weight: lighter;
+     font-size: 1.7em;
+     padding: 0px 10px;
+     font-family: var(--fontMain);
+}
+.h1-main,.h2-main{
+     font-family: var(--fontdroid);
+     color: var(--main);
+     padding: 4px;
+     margin-bottom: 10px;
+     font-size: 2.7em;
+     background-image: linear-gradient(to right, rgba(2, 74, 2, 0.239),white);
+     transition-duration: 1100ms;
+}
+.h2-main{
+     font-size: 2.2em;
+     font-weight: normal;
+}
+.nav-links{
+     color: white;
+     text-decoration: none;
+     padding: 4px;
+     margin: 10px 10px 0 10px;
+     font-family: var(--fontMain);
+     font-weight: bold;
+     font-size: 1.6em;
+     overflow-x: hidden;
+     border-radius: 5px;
+     transition-duration: 1s;
+}
+.nav-links:hover{
+     background-color: var(--cor4);
+     color: var(--cor6);
+     transition-duration: 500ms;
+}
+nav{
+     display: flex;
+
+}
+.a-main{
+     color: green;
+     text-decoration: none;
+     font-weight: 700;
+     font-size: 1.1em;
+     background-color: var(--corClara);
+}
+.a-main::after{
+    content: url('../imagens/link_black_24dp.svg');
+}
+.a-main:hover{
+     color: var(--cor4);
+}
+main{
+     background-color: white;
+     width: 840px;
+     margin: auto;
+     border-radius: 0 0 8px 8px;
+     box-shadow: 2px 2px 7px;
+}
+.main-ident{
+     padding: 10px 10px 10px 10px;
+     
+}
+p{
+     font-family: var(--fontMain);
+     font-size: 1.8em;
+     line-height: 30px;
+     text-indent: 1.3em;
+     text-align: justify;
+}
+main strong{
+     color: var(--cor5);
+     font-weight: bold;
+     padding: 4px 6px;
+}
+picture{
+     padding-left:0;
+}
+img{
+     display: block;
+     margin: auto;
+}
+.dan-drids{
+     margin: 0;
+     padding: 0;
+}
+.irina{
+     margin: 3%;
+}
+li{
+     font-size: 1.8em;
+     font-family: var(--fontMain);
+}
+.video{
+     background-color: var(--cor6);
+     padding: 10px;
+     
+}
+.video> div{
+     text-align: center;
+   } 
+ul{
+     list-style-image: url('../imagens/check_black_18dp.svg');
+}
+aside{
+     margin: auto;
+     background-color: rgba(226, 40, 133, 0.273);
+     padding: 0px 0px 6px 0px;
+     border-radius: 10px;
+}
+.article-h1{
+     background-color: #0f9c4e;
+     padding: 4px;
+     margin: 0;
+     border-radius: 10px 10px 0 0;
+     color: white;
+     font-family: var(--fontMain);
+}
+.article-content{
+     padding: 5px;
+}
+ul{
+     columns: 2;
+     list-style-position: inside;
+}
+abbr{
+     text-decoration: none;
+}
+footer{
+     margin-top: 20px;
+     background-color: var(--cor6);
+     color: white;
+     padding: 3px;
+     font-size: 2em;
+     text-align: center;
+}
+footer a {
+     color: white;
+     text-decoration: none;
+     font-weight: bolder;
+}
+footer a:hover{
+     text-decoration: underline;
+}

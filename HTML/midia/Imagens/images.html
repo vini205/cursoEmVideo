@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Imagens Dinâmicas</title>
+</head>
+<body>
+     <h1>Imagem dinâmica</h1>
+     <p>Ao mudar tamanho da tela a imagem mudara dinâmicamente.</p>
+     <picture>
+          <source media="(max-width:750px)" srcset="fotos/fotoP.png" type="image/png">
+          <source media="(max-width:1050px)" srcset="fotos/fotoM.png" type="image/png">
+          <img src="fotos/fotoG.png" alt="fotoPequena">
+
+     </picture>
+</body>
+</html>
