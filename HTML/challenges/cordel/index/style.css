@@ -1,0 +1,57 @@
+@font-face{
+  src: url(../pacote/fontes/Passion_One/PassionOne-Bold.ttf);
+  font-family: 'Passion One', cursive;
+  font-weight: bold;
+  font-style: normal;
+}
+/*@font-face{
+  src: url(../pacote/fontes/Passion_One/PassionOne-Black.ttf);
+  font-family: 'Passion One', cursive;
+  font-weight: bolder;
+  font-style: normal;
+}
+@font-face{
+  src: url(../pacote/fontes/Passion_One/PassionOne-Regular.ttf);
+  font-family: 'Passion One', cursive;
+  font-weight: normal;
+  font-style: normal;
+}*/
+@font-face {
+  font-family:'sriracha', cursive ;
+  src: url(../pacote/fontes/Sriracha/Sriracha-Regular.ttf) format('truetype');
+  font-style: italic;
+  font-weight: normal;
+}
+:root{
+  --font1:'Passion One';
+  --font2:'sriracha',cursive;
+}
+h1,body{
+  margin: 0;
+  padding: 0;
+}
+header{
+  background-color: black;
+  color: white;
+  margin: none;
+}
+#titleCordel{
+  margin: auto;
+}
+h1{
+  font-family:var(--font1);
+  font-weight: bold;
+  font-size: 4rem;
+  margin: auto;
+  display: block;
+}
+main>p{
+  width: 36%;
+  margin: 3% 3% 3% 1%;
+  font-family: var(--font2);
+  font-weight: bold;
+  font-style: italic;
+  font-size: 2.5rem;
+  line-height: 4rem;
+
+}
