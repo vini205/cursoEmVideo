@@ -1,32 +1,25 @@
+@charset "UTF-8";
 @font-face{
   src: url(../pacote/fontes/Passion_One/PassionOne-Bold.ttf);
   font-family: 'Passion One', cursive;
   font-weight: bold;
   font-style: normal;
 }
-/*@font-face{
-  src: url(../pacote/fontes/Passion_One/PassionOne-Black.ttf);
-  font-family: 'Passion One', cursive;
-  font-weight: bolder;
-  font-style: normal;
-}
-@font-face{
-  src: url(../pacote/fontes/Passion_One/PassionOne-Regular.ttf);
-  font-family: 'Passion One', cursive;
-  font-weight: normal;
-  font-style: normal;
-}*/
+
 @font-face {
   font-family:'sriracha', cursive ;
   src: url(../pacote/fontes/Sriracha/Sriracha-Regular.ttf) format('truetype');
   font-style: italic;
-  font-weight: normal;
+  font-weight: bold;
 }
 :root{
   --font1:'Passion One';
   --font2:'sriracha',cursive;
 }
-h1,body{
+html,body{
+  min-height: 100%;
+}
+body{
   margin: 0;
   padding: 0;
 }
@@ -34,24 +27,60 @@ header{
   background-color: black;
   color: white;
   margin: none;
+  text-align: center;
 }
 #titleCordel{
   margin: auto;
 }
-h1{
+div#titleCordel>h1{
   font-family:var(--font1);
+  font-variant: small-caps;
   font-weight: bold;
   font-size: 4rem;
-  margin: auto;
-  display: block;
+  margin: 0;
+  padding-top: 50px;
 }
-main>p{
-  width: 36%;
+.author{
+  padding-bottom: 50px;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+}
+footer{
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+main p{
   margin: 3% 3% 3% 1%;
   font-family: var(--font2);
   font-weight: bold;
   font-style: italic;
   font-size: 2.5rem;
   line-height: 4rem;
-
+  margin: 0 0 0 2rem;
+}
+section{
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+section.normal{
+  background-color: #fff;
+  color: #000;
+}
+section.imagem{
+  background-color: black;
+  color: white;
+}
+section.imagem > p{
+  max-width: 50%;
+  background-color: rgb(36, 33, 33);
+}
+footer p{
+  padding: 10px 0;
+  margin: 0;
 }
