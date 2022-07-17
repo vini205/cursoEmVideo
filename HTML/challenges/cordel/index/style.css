@@ -3,10 +3,18 @@
   p.paragraph{
     line-height: 1.6em;
     font-size: 1.4em;
-    margin: 3% 3% 10% 1%;
+    margin: 3% 3% 0% 8%;
   }
   div#titleCordel> h1{
     font-size: 350%;
+  }
+  section#img2{
+    background-size: cover;
+  }
+  section#img1{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
 }
@@ -65,12 +73,11 @@ main p{
   line-height: 4rem;
 }
 section{
-  padding-top: 10vh;
   padding-bottom: 10vh;
 }
 section.normal{
   background-color: #fff;
-  color: #000;
+  color: rgba(0, 0, 0);
 }
 section.imagem{
   background-color: black;
@@ -79,7 +86,20 @@ section.imagem{
 section.imagem > p{
   display: inline-block;
   padding: 5px;
-  background-color: rgb(36, 33, 33);
+  background-color: rgba(36, 33, 33, 0);
+}
+section#img2>p{
+  background-color: rgba(36, 33, 33, 0.632);
+}
+#img1{
+  background-image: url('../pacote/imagens/background001.jpg');
+  background-attachment: fixed;
+  background-position: right center;
+}
+#img2{
+  background-attachment: fixed;
+  background-position: center center;
+  background-image: url('../pacote/imagens/background002.jpg');
 }
 footer p{
   padding: 10px 0;
