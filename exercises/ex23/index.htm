@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabelas</title>
+  <style>
+    body{
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      letter-spacing: 1px;
+    }
+    table{
+      border: 2px solid rgb(49, 3, 255);
+      padding: 0;
+      width: 400px;
+      height: 400px;
+      border-collapse: collapse;
+      font-size: 2em;
+    }
+    tr{
+      border: 1px solid rgb(49, 3, 255);
+      margin: 0;
+      padding: 0;
+      background-color: beige;
+    }
+    td{
+      border-left: 1px solid rgb(49, 3, 255);
+      margin: 0;
+      height: 50px;
+      width: 50px;
+      text-align: center;
+      vertical-align: bottom;
+    }
+    .dadoSelecionado{
+      background-color: aqua;
+    }
+    .dadoAtivo{
+      background-color: yellowgreen;
+    }
+    td:hover{
+      background-color: rgb(179, 179, 144);
+    }
+    .number{
+      text-align: right ;
+    }
+    #newValue{
+      background-color: black;
+      color: white;
+      padding: 4px;
+      width: 50%;
+      position: absolute;
+      top: 40%;
+      left: 20%;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 3px;
+      height: 100px;
+    }
+    #newValue>p{
+      margin: 0 0 5px 0;
+    }
+    #newValue>input{
+      outline: none;
+      padding:5px;
+    }
+  </style>
+</head>
+<body>
+  <div id="newValue">
+    <p>Digite o novo Valor</p>
+    <input id='inp1' type="text" placeholder="Digite o novo valor">
+  </div>
+  <h1>Mon première tableau</h1>
+  <!--
+    Hierarquia de tableas Simples:
+    table = tabela
+      TABLE ROW = Linha de tabela
+        TABLE HEARDER = cabeçalho
+        TABLE DATA = info da tabela
+  -->
+  <table id="myTable">
+    <tr>
+      <!-- Prèmiere ligne-->
+      <td>A1</td><!--Information de tableau-->
+      <td class="dadoSelecionado">B1</td>
+      <TD>C1</TD>
+    </tr>
+    <tr>
+      <td>A2</td>
+      <td class="dadoAtivo">B2</td>
+      <td>C2</td>
+    </tr>
+    <tr>
+      <td class="dadoAtivo">A3</td>
+      <td>B3</td>
+      <td>C3</td>
+    </tr>
+  </table>
+  <button onclick="array()">Ajouter des données à la table</button>
+  <script src="sript.js"></script>
+</body>
+</html>
