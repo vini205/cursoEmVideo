@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GRANDE</title>
+  <style>
+    table{
+      width: 500px;
+    }
+    thead , tfoot{
+      background-color: gray;
+      color: white;
+    }
+    td,th{
+      border: 2px solid black;
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>USo de tabelas</h1>
+  <pre>
+    <code>
+      table
+        caption
+        thead
+          td tr th
+        tbody
+          td tr th
+        tfoot
+          td tr th
+    </code>
+  </pre>
+  <table>
+    <caption>Titulo</caption>
+    <thead>
+      <tr>
+        <th scope="col">Estado</th><!-- O scope mostra onde fica o dado da tabela, valor semantico para os sdofjbffvboareh do google-->
+        <th scope="col">Populção</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>SP</td>
+        <td>41 176 420</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th scope="row">Total de Habitantes</th>
+        <td>2235</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>
