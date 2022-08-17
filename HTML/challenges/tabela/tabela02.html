@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabela 02</title>
+  <style>
+    body{
+      font-family: 'Alice';
+      text-transform: capitalize;
+      background-color: brown;
+      padding: 0;
+      margin: 0;
+    }
+    html{
+      margin: 0;
+      padding: 0;
+    }
+    table{
+      border-collapse: collapse;
+      width: 300px;
+    }
+    td{
+      padding: 10px;
+      text-align: center;
+      border: 1px solid black;
+    }
+    td:hover{
+      background-color: rgba(41, 38, 38, 0.247);
+    }
+    .container__div{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container__div> div{
+
+      border: 1px solid gray;
+      padding: 50px;
+      background-color: beige;
+    }
+    td[rowspan]{
+      background-color: rgb(175, 101, 245);
+    }
+    td[colspan]{
+      background-color: rgb(207, 164, 55);
+    }
+  </style>
+</head>
+<body>
+  <div class="container__div">
+    <div>
+      <h1>Desafio de Tabelas 02</h1>
+      <table>
+        <tr>
+          <td colspan="4" >A</td>
+          <td rowspan="4">B</td>
+        </tr>
+        <tr>
+          <td rowspan="4">C</td>
+          <td>D</td>
+          <td>E</td>
+          <td>F</td>
+        </tr>
+        <tr>
+          <td>G</td>
+          <td>H</td>
+          <td>I</td>
+        </tr>
+        <tr>
+          <td>J</td>
+          <td>L</td>
+          <td>M</td>
+        </tr>
+        <tr>
+          <td colspan="4">N</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</body>
+</html>

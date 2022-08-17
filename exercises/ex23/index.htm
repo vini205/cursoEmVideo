@@ -6,12 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tabelas</title>
   <style>
-    body{
+    table{
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
       letter-spacing: 1px;
-    }
-    table{
-      border: 2px solid rgb(49, 3, 255);
+      border: 2px solid blueviolet;
       padding: 0;
       width: 400px;
       height: 400px;
@@ -19,18 +17,18 @@
       font-size: 2em;
     }
     tr{
-      border: 1px solid rgb(49, 3, 255);
+      border: 1px solid blueviolet;
       margin: 0;
       padding: 0;
       background-color: beige;
     }
     td{
-      border-left: 1px solid rgb(49, 3, 255);
+      border-left: 1px solid blueviolet;
       margin: 0;
       height: 50px;
       width: 50px;
       text-align: center;
-      vertical-align: bottom;
+      vertical-align: center;
     }
     .dadoSelecionado{
       background-color: aqua;
@@ -66,40 +64,83 @@
       outline: none;
       padding:5px;
     }
+    body{
+      font-family: 'Alice';
+      text-transform: capitalize;
+      background-color: brown;
+      margin: 0;
+      padding: 0;
+
+    }
+    html{
+      padding: 0;
+      margin: 0;
+    }
+    td{
+      padding: 10px;
+      text-align: center;
+      border: 1px solid black;
+    }
+    .container__div{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 96vh;
+    }
+    .container__div>div{
+      border: 1px solid gray;
+      width: fit-content;
+      padding: 50px;
+      background-color: beige;
+    }
+    button{
+      font-family: 'Alice';
+      font-size: 1.2em;
+      font-weight: bold ;
+      padding: 20px;
+      background-color: transparent;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
   </style>
 </head>
 <body>
-  <div id="newValue">
-    <p>Digite o novo Valor</p>
-    <input id='inp1' type="text" placeholder="Digite o novo valor">
+  <div class="container__div">
+    <div>
+      <div id="newValue">
+        <p>Digite o novo Valor</p>
+        <input id='inp1' type="text" placeholder="Digite o novo valor">
+      </div>
+      <h1>Mon première tableau</h1>
+      <!--
+        Hierarquia de tableas Simples:
+        table = tabela
+          TABLE ROW = Linha de tabela
+            TABLE HEARDER = cabeçalho
+            TABLE DATA = info da tabela
+      -->
+      <table id="myTable">
+        <tr>
+          <!-- Prèmiere ligne-->
+          <td>A1</td><!--Information de tableau-->
+          <td>B1</td>
+          <TD>C1</TD>
+        </tr>
+        <tr>
+          <td>A2</td>
+          <td>B2</td>
+          <td>C2</td>
+        </tr>
+        <tr>
+          <td>A3</td>
+          <td>B3</td>
+          <td>C3</td>
+        </tr>
+      </table>
+      <button onclick="array()">Ajouter des données à la table</button>
+    </div>
   </div>
-  <h1>Mon première tableau</h1>
-  <!--
-    Hierarquia de tableas Simples:
-    table = tabela
-      TABLE ROW = Linha de tabela
-        TABLE HEARDER = cabeçalho
-        TABLE DATA = info da tabela
-  -->
-  <table id="myTable">
-    <tr>
-      <!-- Prèmiere ligne-->
-      <td>A1</td><!--Information de tableau-->
-      <td class="dadoSelecionado">B1</td>
-      <TD>C1</TD>
-    </tr>
-    <tr>
-      <td>A2</td>
-      <td class="dadoAtivo">B2</td>
-      <td>C2</td>
-    </tr>
-    <tr>
-      <td class="dadoAtivo">A3</td>
-      <td>B3</td>
-      <td>C3</td>
-    </tr>
-  </table>
-  <button onclick="array()">Ajouter des données à la table</button>
   <script src="sript.js"></script>
 </body>
 </html>
