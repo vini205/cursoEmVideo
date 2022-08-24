@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ISOLAR COLUNAS</title>
+  <style>
+    td,th{
+      border: 1px solid;
+      padding: 5px;
+    }
+    table{
+      border-collapse: collapse;
+    }
+    .col2{
+      background-color: aqua;
+    }
+    .colg{
+      background-color: lightcoral;
+    }
+  </style>
+</head>
+<body>
+  <h1>Como destacar COLUNAS em tabelas</h1>
+  <table>
+    <caption>CAdastro</caption>
+    <colgroup>
+      <col class="col1"><!-- O número de colunas -->
+      <col class="col2">
+      <col class="col3">
+      <col class="colg" span="3"><!-- O item spawuna em 3 -->
+    </colgroup>
+    <!--
+      <colgroup>
+        <col class="amarelo">
+        <col class="red">
+        <col class="red">
+        <col class="amarelo">
+        <col class="amarelo">
+        <col class="green">
+      </colgroup>
+    -->
+    <tr>
+      <th  scope="col">Nome </th>
+      <th scope="col">Genero</th>
+      <th scope="col">Idade</th>
+    </tr>
+    <tr>
+      <td>'dadp'</td>
+      <td>'dadp'</td>
+      <td>'dadp'</td>
+      <td>'dadp'</td>
+      <td>'dadp'</td>
+      <td>'dadp'</td>
+    </tr>
+    <tr>
+      <td>'dadp'</td>
+      <td>'dadp'</td>
+      <td>'dadp'</td>
+      <td>'dadp'</td>
+      <td>'dadp'</td>
+      <td>'dadp'</td>
+    </tr>
+    <tr>
+      <td>'dadp'</td>
+      <td>'dadp'</td>
+      <td>'dadp'</td>
+      <td>'dadp'</td>
+      <td>'dadp'</td>
+      <td>'dadp'</td>
+    </tr>
+  </table>
+</body>
+</html>
