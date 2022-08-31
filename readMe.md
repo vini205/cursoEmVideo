@@ -5,3 +5,6 @@
 - Página do Cordel  
   - [Cordel](https://vini205.github.io/cursoEmVideo/HTML/challenges/cordel/index/index.html)
 
+## Para ver o site 
+copie e mude para o arquivo:
+  - https://vini205.github.io/cursoEmVideo/HTML/exercises/ex/exercicio
