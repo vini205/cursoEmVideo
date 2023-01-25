@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Outpt</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+    h1{
+      font-family:'Alice',monospace ;
+    }
+  </style>
+</head>
+<body>
+  <h1>Output</h1>
+  <p>
+    <input type="number" id="o" value="12">
+    <label for="in1">NUmero 1</label>
+    <input type="number" 
+    oninput="soma.innerHTML=Number(in1.value) + Number(in2.value)" name="in1" id="in1" min="0" max="10">
+    <label for="in2">NUmero 2</label>
+    <input type="number" name="in2" id="in2" min="10" max="20" 
+    oninput="soma.innerHTML=Number(o.value) + Number(in2.value)"> 
+<!-- 
+  Se usa id aqui talvez pq o elemento 
+  ja deve estar no DOM então ele procura 
+  altomaticamente o ID e sabe qual é o elemento
+  Não funciona com class
+-->
+  </p>
+  <p>
+    <label for="soma">Output</label>
+    <output name="soma" id="soma">0</output>
+  </p>
+  <p>
+    <input type="submit" value="Send">
+    <input type="reset" value="Reset">
+  </p>
+</body>
+</html>

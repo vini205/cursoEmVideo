@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select Datalist textearea</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+    h1{
+      font-family:'Alice',monospace ;
+    }
+    datalist{
+      appearance: none;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      background: black;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h1>Select, Datalist Textarea</h1>
+  <form action="" method="get">
+    <p>
+      <label for="Estado">Estados:</label>
+
+      <select name="Estado" id="Estado">
+        <option value="" selected>-- Escolha</option>
+        <optgroup label="Sul">
+          <option value="sc">Santa catarina</option>
+          <option value="PR">Paraná</option>
+          <option value="RS">Rio Grande do Sul</option>
+        </optgroup> 
+        <optgroup label="Sudeste">
+          <option value="SP">São Paulo</option>
+          <option value="MG">Minas Gerais</option>
+          <option value="Rj">RIo de Janeiro</option>
+          <option value="ES">Espirito Santo</option>
+        </optgroup>
+        <optgroup label="Centro-Oeste" title="Centro-Oeste">
+          <option value="MT">Mato Grosso</option>
+          <option value="MS">Mato grosso Sul</option>
+          <option value="GO">Goiás</option>
+        </optgroup>
+      </select>
+    </p>
+    <p>
+      <label for="prof">Profissão</label>
+      <input type="text" id='prof' name="prof" list="listprof">
+      <datalist id="listprof">
+        <option value="Adm">Adminitrador</option>
+        <option value="Dev">Desenvolvedor</option>
+        <option value="Chef">Chefe de Cozinha</option>
+      </datalist>
+    </p>
+    <p>
+      <label for="msm">Mensagem</label> <br>
+      <textarea placeholder="Opa" name="msg" id="msg" cols="20" rows="10" maxlength="300"></textarea> <!-- Pos, 3000bites -->
+    </p>
+    <input type="submit" value="Send">
+  </form>
+</body>
+</html>

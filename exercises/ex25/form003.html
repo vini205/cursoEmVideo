@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color, Range, Files</title>
+  <style>
+    input[type='range'],
+input[type='range']::-webkit-slider-runnable-track,
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none; /*Tira aparência padrão*/
+  transition: all 10s;
+}
+    #hangi{
+      appearance: none;
+      overflow: hidden;
+      height: 40px;
+      width: 200px;
+      border: 1px solid black;
+      border-radius: 50px;
+    }
+    #hangi::-webkit-slider-thumb{/*Color width e height*/
+      width: 10px;
+      border-radius: 50%;
+      height: 10px;
+      background: blue;
+    }
+    #hangi::-webkit-slider-runnable-track{
+      background: lightcoral;
+    }
+  </style>
+</head>
+<body>
+  <h1>Inputs Color Range and Files</h1>
+  <form action="" method="get" autocomplete="on"> <!-- Se passar de 3000 bites usa POST -->
+    <p>
+      <input name="cor" type="color" value="#ffff00">
+    </p>
+    <p>
+      <label for="hangi">Range</label>
+      <p id="res"></p>
+      <input type="range" oninput="oi()" name="hangi" id="hangi" min="0" max="100" value="10" step=".10">
+    </p>
+    <!-- <p>
+      <label for="image">Image?</label>
+      <input type="image"  name="image" src="form002.html" alt="">
+    </p> -->
+    <p>
+      <label for="file">File</label> <!-- Só usa com POST -->
+      <input type="file" name="file" id="file">
+    </p>
+    <input type="submit" value="Enviar">
+  </form>
+  <script>
+    
+    function oi(){
+      let v = document.getElementById('hangi');
+      document.getElementById('res').innerHTML=v.value;
+    }
+  </script>
+</body>
+</html>

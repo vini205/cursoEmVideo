@@ -25,10 +25,24 @@
       <input type="date" name="dia" id="dia" value="2023-07-02">
       <input type="time"  name="dia" value="10:39" id="">
     </p>
+
+    <p>
+      <label for="email">Email:</label>
+      <input type="email" value="Ola@o" name="email" required autocomplete="email">
+    </p>
+    <p>
+      <label for="tel">Telefone:</label>
+      <input type="tel" title="Digite o forma de Número de telefone: dd-xxxxx-xxxx" 
+      pattern="^\d{2}-[0-9]{5}-[0-9]{4}$" required name="tel" autocomplete="tel">
+      <!-- /d ou [0-9] coloca só digitos -->
+    </p>
+
+
     <p>
       <input type="submit" value="Enviar">
       <input type="reset" value="limpar">
     </p>
+
   </form>
 </body>
 </html>

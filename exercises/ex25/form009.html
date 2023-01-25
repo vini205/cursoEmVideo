@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Range OUTPUT e jsScript</title>
+</head>
+<body>
+  <h1>Range Script</h1>
+  <p>
+    <output id="outp"></output>
+    <input type="range" name="r" value="50"  min='0' max="10"  id="r1" oninput="outp.innerHTML=r1.value">
+  </p>
+
+  <textarea readonly style="resize: none;" cols="100" rows="10">
+    <p>
+      <output id="outp"></output>
+      <input type="range" name="r" value="50"  min='0' max="10"  id="r1" oninput="outp.innerHTML=r1.value">
+    </p>
+  </textarea>
+
+  <p>
+    <label for="hangi">Range</label>
+    <p id="res"></p>
+    <input type="range" oninput="oi()" name="hangi" id="hangi" min="0" max="100" value="10" step=".10">
+  </p>
+  <code>
+    <pre>
+      
+      <textarea  cols="100" readonly  rows="10">
+      <label for="hangi">Range</label>
+      <p id="res"></p>
+      <input type="range" oninput="oi()" name="hangi" id="hangi" min="0" max="100" value="10" step=".10">
+      <script>
+        function oi(){
+          let v = document.getElementById('hangi');
+          document.getElementById('res').innerHTML=v.value;
+        }
+      </script>
+    
+    </textarea>
+    </pre>
+  </code>
+  <script>
+    function oi(){
+      let v = document.getElementById('hangi');
+      document.getElementById('res').innerHTML=v.value;
+    }
+  </script>
+</body>
+</html>
