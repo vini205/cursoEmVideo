@@ -1,0 +1,11 @@
+@charset "UTF-8";
+body{
+  background-color: #233eff;
+  background-image: url("../imgs/cev-landscape.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position:left bottom;
+}
+.tipo__landscape{
+  display: block;
+}
