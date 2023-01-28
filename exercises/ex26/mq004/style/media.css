@@ -1,0 +1,64 @@
+@charset "UTF-8";
+/*
+  Todas demais medias
+*/
+/* 
+  What are common breakpoints? Common breakpoints 
+  320px — 480px for mobile devices
+  481px — 768px for iPads & tablets
+  769px — 1024px for small screens like laptop
+  1025px — 1200px for large screens like Desktops, 
+  1201px and above for extra large screens like TV.
+*/
+@media print {
+  body{
+    background-image:  url("../imgs/back-print.jpg") red;
+  }
+  main{
+    width: 80%;
+  }
+  #printer{
+    display:block;
+  }
+}
+@media screen and (max-width:480px){
+  #phone{
+    display: block;
+  }
+  main{
+    width: 80%;
+  }
+}
+@media screen and (max-width:768px) and (min-width:481px) {
+  body{
+    background-image: url("../imgs/back-tablet.jpg");
+  }
+  main{
+    width: 60%;
+  }
+  #tablet{
+    display: block;
+  }
+}
+@media screen and (min-width:768px) and (max-width:1200px) {
+  body{
+    background-image: url("../imgs/back-pc.jpg");
+  }
+  main{
+    width: 500px;
+  }
+  #pc{
+    display: block;
+  }
+}
+@media screen and (min-width:1200px){
+  body{
+    background-image: url("../imgs/back-tv.jpg");
+  }
+  main{
+    width: 700px;
+  }
+  #tv{
+    display: block;
+  }
+}

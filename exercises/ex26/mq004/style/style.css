@@ -1,0 +1,33 @@
+@charset "UTF-8";
+/* 
+  Vers'ao Mobile First
+*/
+*{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3em;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  width: 100vw;
+  height: 100vh;
+}
+body{
+  background: url("../imgs/back-phone.jpg") no-repeat;
+  background-size: cover;
+  background-position: center ;
+}
+main{
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 90vw;
+  border-radius: 10px;
+  padding: 10px;
+  margin: auto;
+  transition: 1s all;
+}
+img{
+  display: block;
+  margin: auto;
+}
+#tablet,#pc,#printer,#tv,#phone{display: none;}
