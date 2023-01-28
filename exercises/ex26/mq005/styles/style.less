@@ -1,0 +1,89 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+body,html{
+  background-color: lightcyan;
+}
+.title{
+  text-align: center;
+  text-transform: capitalize;
+  
+}
+header{
+  padding-top:0 ;
+  margin-top: 0;
+  background-color: gray;
+  &:hover menu,&:focus menu{
+    display: block;
+  }
+}
+header>h1{
+  padding: 10px;
+  text-align: center;
+}
+menu{
+  display: none;
+  margin: 0;
+  padding: 0 1px 1px 1px;
+  transition: display 1s;
+  &>ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  & ul a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    border-top: 3px solid gray;
+    background-color: rgb(163, 163, 163);
+    transition: background 400ms;
+  }
+  &:hover,&:focus {
+    display: block;
+  }
+}
+menu > ul >li a:hover{
+  background-color: gray;
+}
+main{
+  width: 90vw;
+  background-color: white;
+  margin: auto;
+  margin-top:10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+article > ul{
+  padding-bottom: 20px;
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 800,
+  'GRAD' 0,
+  'opsz' 38
+}
+span.burguer{
+  background-color: rgb(87, 87, 87);
+  display: block;
+  padding:10px;
+  text-align: center;
+  color: white;
+  transition: 200ms all;
+  &:hover{
+    background-color: white;
+    cursor: pointer;
+    color: black;
+  }
+  &:hover + header>menu,&:focus + header>menu{
+    display: block;
+  }
+}
+p{
+  text-align: justify;
+}

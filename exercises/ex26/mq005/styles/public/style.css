@@ -1,0 +1,86 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body,
+html {
+  background-color: lightcyan;
+}
+.title {
+  text-align: center;
+  text-transform: capitalize;
+}
+header {
+  padding-top: 0 ;
+  margin-top: 0;
+  background-color: gray;
+}
+header:hover menu,
+header:focus menu {
+  display: block;
+}
+header > h1 {
+  padding: 10px;
+  text-align: center;
+}
+menu {
+  display: none;
+  margin: 0;
+  padding: 0 1px 1px 1px;
+  transition: display 1s;
+}
+menu > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+menu ul a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  border-top: 3px solid gray;
+  background-color: #a3a3a3;
+  transition: background 400ms;
+}
+menu:hover,
+menu:focus {
+  display: block;
+}
+menu > ul > li a:hover {
+  background-color: gray;
+}
+main {
+  width: 90vw;
+  background-color: white;
+  margin: auto;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+article > ul {
+  padding-bottom: 20px;
+}
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 800, 'GRAD' 0, 'opsz' 38;
+}
+span.burguer {
+  background-color: #575757;
+  display: block;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  transition: 200ms all;
+}
+span.burguer:hover {
+  background-color: white;
+  cursor: pointer;
+  color: black;
+}
+span.burguer:hover + header > menu,
+span.burguer:focus + header > menu {
+  display: block;
+}
+p {
+  text-align: justify;
+}
