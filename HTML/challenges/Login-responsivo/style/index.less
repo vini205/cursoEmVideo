@@ -1,0 +1,153 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+
+@primary: #252956;
+@secondary:#689FF9;
+@font-primary: 'Alice',serif;
+:root{
+  --primary:@primary;
+  --secondary:@secondary;
+}
+
+*{
+  font-family: @font-primary;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  background-color: @secondary;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+main{
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: auto  ;
+  #login{
+    background-color: white;
+    width: 350px;
+    height: 80%;
+    border-radius: 30px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    transition: 0.5s all;
+    transition-timing-function: ease-in;
+    #img{
+      background: @secondary url("../imgs/sean-whang.jpg");
+      height: 50%;
+      background-position: center;
+      background-repeat:no-repeat;
+    }
+    #form{
+      padding: 20px;
+      display: block;   
+      font-size: 1em;
+      p{
+        margin-bottom:5px;
+      }
+  }
+  h1{
+    text-align: center;
+  }
+  }
+}
+.card{
+  width: 100%;
+  height: 100%;
+
+}
+form .campo {
+  input{
+    border: none;
+    border-bottom: blue 1px solid;
+    padding: 5px;
+    padding-bottom: 1px;
+    margin: 5px;
+  }
+  width: 100%;
+}
+form > input[type=submit],form > input[type=reset]{
+  display: block;
+  font-size: 1em;
+  width: 100%;
+  margin: 10px 0;
+  color: white;
+  background-color: var(--secondary);
+  border: none;
+  padding: 10px;
+  transition: 400ms all;
+  &:hover{
+    background:@primary;
+  }
+}
+form a{
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  span{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+/*
+Medias
+*/
+
+.modo-tablet(@rules){
+  @media screen and (min-width:768px) and (max-width:1000px) {
+    @rules();
+  }
+}
+.modo-wider(@rules){
+  @media screen and (min-width:1024px) {
+    @rules();
+  }
+}
+body{
+  .modo-wider({
+    background-image: linear-gradient(45deg, var(--primary) , var(--secondary) );
+  })
+}
+main#main{
+  section#login{
+  .modo-tablet({
+    width: 90%;
+  });
+  .modo-wider({
+    width: 80%;
+  })
+}
+div#img{
+  .modo-tablet({
+    float: left;
+    height: 100%;
+    width: 47%;
+  });
+  .modo-wider({
+    float: left;
+    width: 40%;
+
+    height: 100%;
+  })
+}
+div#form{
+  .modo-tablet({
+    float:right;
+    padding: 20px;
+    width: 53%
+  });
+  .modo-wider({
+    float: right;
+    width: 60%;
+    height: 100%;
+  })
+}
+}

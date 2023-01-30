@@ -1,0 +1,147 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Alice';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/alice/v20/OpNCnoEEmtHa6FcJ.ttf) format('truetype');
+}
+:root {
+  --primary: #252956;
+  --secondary: #689FF9;
+}
+* {
+  font-family: 'Alice', serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  background-color: #689FF9;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+main {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: auto  ;
+}
+main #login {
+  background-color: white;
+  width: 350px;
+  height: 80%;
+  border-radius: 30px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s all;
+  transition-timing-function: ease-in;
+}
+main #login #img {
+  background: #689FF9 url("../imgs/sean-whang.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+main #login #form {
+  padding: 20px;
+  display: block;
+  font-size: 1em;
+}
+main #login #form p {
+  margin-bottom: 5px;
+}
+main #login h1 {
+  text-align: center;
+}
+.card {
+  width: 100%;
+  height: 100%;
+}
+form .campo {
+  width: 100%;
+}
+form .campo input {
+  border: none;
+  border-bottom: blue 1px solid;
+  padding: 5px;
+  padding-bottom: 1px;
+  margin: 5px;
+}
+form > input[type=submit],
+form > input[type=reset] {
+  display: block;
+  font-size: 1em;
+  width: 100%;
+  margin: 10px 0;
+  color: white;
+  background-color: var(--secondary);
+  border: none;
+  padding: 10px;
+  transition: 400ms all;
+}
+form > input[type=submit]:hover,
+form > input[type=reset]:hover {
+  background: #252956;
+}
+form a {
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: 50px;
+}
+form a span {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+/*
+Medias
+*/
+@media screen and (min-width: 1024px) {
+  body {
+    background-image: linear-gradient(45deg, var(--primary), var(--secondary));
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+  main#main section#login {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main#main section#login {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+  main#main div#img {
+    float: left;
+    height: 100%;
+    width: 47%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main#main div#img {
+    float: left;
+    width: 40%;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+  main#main div#form {
+    float: right;
+    padding: 20px;
+    width: 53%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main#main div#form {
+    float: right;
+    width: 60%;
+    height: 100%;
+  }
+}
